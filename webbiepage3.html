@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letterbox Page</title>
+    <link rel="stylesheet" href="webbie.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo font-barbie">Dear, My Crazy Soulmate</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="webbiepage2.html">Memories</a></li>
+                <li><a href="webbiepage3.html" class="active">Letterbox</a></li>
+                <li><a href="webbiepage4.html">Make a Wish</a></li>
+                <li><a href="webbiepage5.html">Treasure Map</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="font-barbie" style="text-align: center; margin-bottom: 0.5rem;">
+             ~ 18 Letters For Your 18th Birthday ~
+        </h1>
+        <p style="text-align: center; margin-bottom: 2rem; color: #6b3b6e;">Tap each note to read what's inside!</p>
+
+        <!-- Dynamic Letterbox Card Grid -->
+<div class="envelope-grid" id="gridContainer"></div>    </div>
+
+    <!-- Popup Modal -->
+    <div class="modal-overlay" id="letterModal">
+        <div class="modal-content">
+            <h2 class="font-barbie" id="modalTitle" style="margin-bottom: 1rem;">Envelope</h2>
+            <p id="modalText" style="font-size: 1.1rem; color: #4a0e2e; margin-bottom: 1.5rem; line-height: 1.6;"></p>
+            <button class="btn-primary" onclick="closeModal()">Close Note</button>
+        </div>
+    </div>
+
+    <script src="webbie.js"></script>
+    
+</body>
+</html>
